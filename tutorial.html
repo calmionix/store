@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0a1a">
+  <meta name="description" content="Tutorial Calmionix - Panduan lengkap cara membeli rank dan shard">
+  <meta name="keywords" content="Minecraft, Tutorial, Calmionix, Panduan">
+  <meta name="author" content="Calmionix">
+  
+  <title>Tutorial - Calmionix</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Galaxy Background Canvas -->
+  <canvas id="galaxy-canvas"></canvas>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">
+      <img src="assets/images/logo.png" alt="Calmionix" class="navbar-logo">
+      <span class="navbar-title">Calmionix</span>
+    </a>
+    
+    <ul class="navbar-nav">
+      <li><a href="index.html" class="nav-link">Beranda</a></li>
+      <li><a href="shop.html" class="nav-link">Toko</a></li>
+      <li><a href="vote.html" class="nav-link">Vote</a></li>
+      <li><a href="tutorial.html" class="nav-link active">Tutorial</a></li>
+      <li><a href="https://discord.gg/qfdBAW29sT" target="_blank" class="nav-link">Discord</a></li>
+    </ul>
+    
+    <div class="navbar-actions">
+      <div class="wib-clock" id="wib-clock">00:00:00 WIB</div>
+      <button class="btn-icon" id="theme-toggle" title="Switch theme">☀️</button>
+      <button class="btn-icon" id="lang-toggle" title="Switch language">EN</button>
+      
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Tutorial Header -->
+  <header class="tutorial-header">
+    <div class="section-header">
+      <h1 class="section-title">📘 Cara Membeli Rank & Shard</h1>
+      <p class="section-subtitle">Panduan lengkap cara membeli rank dan shard di Calmionix</p>
+    </div>
+  </header>
+
+  <!-- Tutorial Steps -->
+  <section class="tutorial-steps">
+    <div class="tutorial-step">
+      <div class="tutorial-step-number">1</div>
+      <div class="tutorial-step-content">
+        <h3 class="tutorial-step-title">Pilih Produk</h3>
+        <p class="tutorial-step-desc">Kunjungi halaman toko dan pilih rank atau shard yang ingin kamu beli. Klik pada produk untuk melihat detailnya.</p>
+      </div>
+    </div>
+    
+    <div class="tutorial-step">
+      <div class="tutorial-step-number">2</div>
+      <div class="tutorial-step-content">
+        <h3 class="tutorial-step-title">Klik Beli</h3>
+        <p class="tutorial-step-desc">Setelah memilih produk, klik tombol "Beli" pada produk yang kamu pilih. Sistem akan membuka halaman checkout.</p>
+      </div>
+    </div>
+    
+    <div class="tutorial-step">
+      <div class="tutorial-step-number">3</div>
+      <div class="tutorial-step-content">
+        <h3 class="tutorial-step-title">Masukkan Username</h3>
+        <p class="tutorial-step-desc">Masukkan username Minecraft kamu dengan benar. Pastikan tidak ada kesalahan penulisan karena reward akan dikirim ke username tersebut.</p>
+      </div>
+    </div>
+    
+    <div class="tutorial-step">
+      <div class="tutorial-step-number">4</div>
+      <div class="tutorial-step-content">
+        <h3 class="tutorial-step-title">Pilih Platform (Java/Bedrock)</h3>
+        <p class="tutorial-step-desc">Pilih platform yang kamu gunakan - Java Edition untuk PC atau Bedrock Edition untuk mobile/console. Untuk Bedrock, sistem akan otomatis menambahkan prefix "." pada username.</p>
+      </div>
+    </div>
+    
+    <div class="tutorial-step">
+      <div class="tutorial-step-number">5</div>
+      <div class="tutorial-step-content">
+        <h3 class="tutorial-step-title">Lanjut Pembayaran</h3>
+        <p class="tutorial-step-desc">Pilih metode pembayaran yang tersedia (QRIS, Transfer Bank, E-Wallet) dan selesaikan transaksi sesuai instruksi.</p>
+      </div>
+    </div>
+    
+    <div class="tutorial-step">
+      <div class="tutorial-step-number">6</div>
+      <div class="tutorial-step-content">
+        <h3 class="tutorial-step-title">Reward Masuk ke Server!</h3>
+        <p class="tutorial-step-desc">Rank atau shard akan otomatis masuk ke akun kamu dalam 1-5 menit. Login ke server dan nikmati benefitnya!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Support Section -->
+  <section class="tutorial-support">
+    <h3>Butuh Bantuan?</h3>
+    <p>Jika mengalami kendala saat pembelian, hubungi tim support kami di Discord. Kami siap membantu 24/7!</p>
+    <a href="https://discord.gg/qfdBAW29sT" target="_blank" class="btn btn-discord">Hubungi Support</a>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section">
+    <div class="media-container">
+      <div class="media-card">
+        <div class="media-header">
+          <h2 class="media-title">❓ Pertanyaan Umum</h2>
+        </div>
+        
+        <div class="media-content" style="grid-template-columns: 1fr;">
+          <div class="media-benefits">
+            <h4 style="color: var(--accent-blue); margin-bottom: 1rem;">Berapa lama proses pembelian?</h4>
+            <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+              Proses pembelian biasanya memakan waktu 1-5 menit setelah pembayaran berhasil. Jika lebih dari 10 menit belum masuk, silakan hubungi support.
+            </p>
+            
+            <h4 style="color: var(--accent-blue); margin-bottom: 1rem;">Metode pembayaran apa yang tersedia?</h4>
+            <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+              Kami menerima pembayaran via QRIS, Transfer Bank, E-Wallet (Dana, OVO, GoPay), dan pulsa.
+            </p>
+            
+            <h4 style="color: var(--accent-blue); margin-bottom: 1rem;">Apakah aman membeli di sini?</h4>
+            <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+              Sangat aman! Kami menggunakan sistem pembayaran terpercaya dan pengiriman otomatis.
+            </p>
+            
+            <h4 style="color: var(--accent-blue); margin-bottom: 1rem;">Bisa refund jika salah username?</h4>
+            <p style="color: var(--text-secondary);">
+              Mohon maaf, kami tidak bisa refund jika kesalahan datang dari pembeli. Pastikan username sudah benar sebelum checkout.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <img src="assets/images/logo.png" alt="Calmionix" class="footer-logo">
+        <span class="footer-title">Calmionix</span>
+      </div>
+      
+      <p class="footer-copyright">© 2024 Calmionix. All rights reserved.</p>
+      
+      <div class="footer-links">
+        <a href="#" class="footer-link">Syarat & Ketentuan</a>
+        <a href="#" class="footer-link">Kebijakan Privasi</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Container -->
+  <div class="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="js/theme.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

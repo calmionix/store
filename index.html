@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0a1a">
+  <meta name="description" content="Calmionix - Server Minecraft Terbaik. Dapatkan rank eksklusif, shard, dan pengalaman bermain yang tak terlupakan!">
+  <meta name="keywords" content="Minecraft, Server, Calmionix, Minecraft Indonesia, Minecraft Server">
+  <meta name="author" content="Calmionix">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Calmionix - Minecraft Server">
+  <meta property="og:description" content="Server Minecraft Terbaik dengan fitur eksklusif dan komunitas aktif">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://calmionix.fun">
+  
+  <title>Calmionix - Minecraft Server</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Galaxy Background Canvas -->
+  <canvas id="galaxy-canvas"></canvas>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">
+      <img src="assets/images/logo.png" alt="Calmionix" class="navbar-logo">
+      <span class="navbar-title">Calmionix</span>
+    </a>
+    
+    <ul class="navbar-nav">
+      <li><a href="index.html" class="nav-link active">Beranda</a></li>
+      <li><a href="shop.html" class="nav-link">Toko</a></li>
+      <li><a href="vote.html" class="nav-link">Vote</a></li>
+      <li><a href="tutorial.html" class="nav-link">Tutorial</a></li>
+      <li><a href="https://discord.gg/qfdBAW29sT" target="_blank" class="nav-link">Discord</a></li>
+    </ul>
+    
+    <div class="navbar-actions">
+      <div class="wib-clock" id="wib-clock">00:00:00 WIB</div>
+      <button class="btn-icon" id="theme-toggle" title="Switch theme">☀️</button>
+      <button class="btn-icon" id="lang-toggle" title="Switch language">EN</button>
+      
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span>✨</span>
+        <span>Server Minecraft Terbaik</span>
+      </div>
+      
+      <h1 class="hero-title">
+        Selamat Datang di
+        <br>
+        <span class="gradient-text">Calmionix</span>
+      </h1>
+      
+      <p class="hero-description">
+        Bergabunglah dengan petualangan epik di server Minecraft terbaik. Dapatkan rank eksklusif, shard, dan pengalaman bermain yang tak terlupakan!
+      </p>
+      
+      <div class="hero-actions">
+        <a href="shop.html" class="btn btn-primary btn-lg">🛒 Beli Sekarang</a>
+        <button class="btn btn-secondary btn-lg" onclick="showToast('IP: calmionix.fun', 'info')">🎮 Join Server</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Server Info Section -->
+  <section class="server-info">
+    <div class="server-card">
+      <div class="server-icon">🎮</div>
+      <div class="server-details">
+        <h3>Informasi Server</h3>
+        <div class="server-info-grid">
+          <div class="server-info-item" data-copy="calmionix.fun">
+            <div class="server-info-label">IP Address</div>
+            <div class="server-info-value clickable">
+              <span>calmionix.fun</span>
+              <span>📋</span>
+            </div>
+          </div>
+          <div class="server-info-item" data-copy="19133">
+            <div class="server-info-label">Port</div>
+            <div class="server-info-value clickable">
+              <span>19133</span>
+              <span>📋</span>
+            </div>
+          </div>
+        </div>
+        <div class="server-status" style="margin-top: 1rem;">
+          <span class="status-dot"></span>
+          <span id="server-status-text">Loading...</span>
+          <span>•</span>
+          <span id="server-players">-</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features-section">
+    <div class="section-header">
+      <h2 class="section-title">Fitur Unggulan</h2>
+      <p class="section-subtitle">Nikmati berbagai fitur menarik di server kami</p>
+    </div>
+    
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">❓</div>
+        <h3 class="feature-title">Unknown</h3>
+        <p class="feature-description">Unknown feature</p>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">❓</div>
+        <h3 class="feature-title">Unknown</h3>
+        <p class="feature-description">Unknown feature</p>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">❓</div>
+        <h3 class="feature-title">Unknown</h3>
+        <p class="feature-description">Unknown feature</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vote Section -->
+  <section class="vote-section">
+    <div class="vote-container">
+      <div class="vote-card">
+        <div class="vote-icon">🗳️</div>
+        <h2 class="vote-title">🗳️ Vote & Dapatkan Reward!</h2>
+        <p class="vote-description">
+          Dukung server kami dengan voting setiap hari dan dapatkan reward menarik
+        </p>
+        
+        <div class="vote-rewards">
+          <div class="reward-item">
+            <span class="reward-icon">💰</span>
+            <span class="reward-text">Uang In-Game</span>
+          </div>
+          <div class="reward-item">
+            <span class="reward-icon">💎</span>
+            <span class="reward-text">Shards</span>
+          </div>
+          <div class="reward-item">
+            <span class="reward-icon">🗝️</span>
+            <span class="reward-text">Crate Key</span>
+          </div>
+        </div>
+        
+        <a href="vote.html" class="btn btn-primary btn-lg">Vote Sekarang</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Media Rank Section -->
+  <section class="media-section">
+    <div class="media-container">
+      <div class="media-card">
+        <div class="media-header">
+          <div class="media-badge">
+            <span>🔥</span>
+            <span>GRATIS!</span>
+          </div>
+          <h2 class="media-title">Dapatkan Rank Media GRATIS!</h2>
+          <p class="media-subtitle">Jadilah content creator dan dapatkan rank eksklusif</p>
+        </div>
+        
+        <div class="media-content">
+          <div class="media-benefits">
+            <h4>Benefit Rank Media:</h4>
+            <ul>
+              <li>Akses /fly di semua dunia</li>
+              <li>Bonus uang harian</li>
+              <li>Tag [MEDIA] eksklusif</li>
+              <li>Akses ke channel khusus</li>
+            </ul>
+          </div>
+          
+          <div class="media-rules">
+            <h4>Syarat & Ketentuan:</h4>
+            <ul>
+              <li>Konten harus serius (tidak boleh JJ)</li>
+              <li>Wajib membahas server Calmionix</li>
+              <li>Minimal 1000 views per video</li>
+              <li>Upload minimal 2 video per minggu</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="media-socials">
+          <h4>Follow kami di:</h4>
+          <div class="social-links">
+            <a href="https://tiktok.com/@calmionix.id" target="_blank" class="social-link">
+              <span>📱</span>
+              <span>@calmionix.id</span>
+            </a>
+            <a href="https://tiktok.com/@calmionix.smp" target="_blank" class="social-link">
+              <span>📱</span>
+              <span>@calmionix.smp</span>
+            </a>
+            <a href="https://youtube.com/@calmionix" target="_blank" class="social-link">
+              <span>▶️</span>
+              <span>@calmionix</span>
+            </a>
+          </div>
+        </div>
+        
+        <div class="media-cta">
+          <a href="https://discord.gg/qfdBAW29sT" target="_blank" class="btn btn-discord btn-lg">Join Discord untuk Apply</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Discord CTA Section -->
+  <section class="discord-cta">
+    <div class="discord-card">
+      <div class="discord-icon">💬</div>
+      <h2 class="discord-title">Bergabung dengan Komunitas Kami</h2>
+      <p class="discord-description">
+        Dapatkan update terbaru, bertemu pemain lain, dan ikuti event seru di Discord server kami!
+      </p>
+      <a href="https://discord.gg/qfdBAW29sT" target="_blank" class="btn btn-discord btn-lg">Join Discord</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <img src="assets/images/logo.png" alt="Calmionix" class="footer-logo">
+        <span class="footer-title">Calmionix</span>
+      </div>
+      
+      <p class="footer-copyright">© 2024 Calmionix. All rights reserved.</p>
+      
+      <div class="footer-links">
+        <a href="#" class="footer-link">Syarat & Ketentuan</a>
+        <a href="#" class="footer-link">Kebijakan Privasi</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Container -->
+  <div class="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="js/products.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

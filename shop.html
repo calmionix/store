@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0a1a">
+  <meta name="description" content="Toko Calmionix - Beli Rank dan Shard untuk pengalaman bermain yang lebih baik">
+  <meta name="keywords" content="Minecraft, Shop, Calmionix, Rank, Shard">
+  <meta name="author" content="Calmionix">
+  
+  <title>Toko - Calmionix</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Galaxy Background Canvas -->
+  <canvas id="galaxy-canvas"></canvas>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">
+      <img src="assets/images/logo.png" alt="Calmionix" class="navbar-logo">
+      <span class="navbar-title">Calmionix</span>
+    </a>
+    
+    <ul class="navbar-nav">
+      <li><a href="index.html" class="nav-link">Beranda</a></li>
+      <li><a href="shop.html" class="nav-link active">Toko</a></li>
+      <li><a href="vote.html" class="nav-link">Vote</a></li>
+      <li><a href="tutorial.html" class="nav-link">Tutorial</a></li>
+      <li><a href="https://discord.gg/qfdBAW29sT" target="_blank" class="nav-link">Discord</a></li>
+    </ul>
+    
+    <div class="navbar-actions">
+      <div class="wib-clock" id="wib-clock">00:00:00 WIB</div>
+      <button class="btn-icon" id="theme-toggle" title="Switch theme">☀️</button>
+      <button class="btn-icon" id="lang-toggle" title="Switch language">EN</button>
+      
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Shop Header -->
+  <header class="shop-header">
+    <div class="section-header">
+      <h1 class="section-title">🛒 Toko Calmionix</h1>
+      <p class="section-subtitle">Pilih rank atau shard yang ingin kamu beli</p>
+    </div>
+    
+    <div class="shop-categories">
+      <button class="category-btn active" data-category="all">Semua</button>
+      <button class="category-btn" data-category="rank">Rank</button>
+      <button class="category-btn" data-category="shard">Shard</button>
+    </div>
+  </header>
+
+  <!-- Products Grid -->
+  <section class="products-grid" id="products-container">
+    <!-- Rank 1 -->
+    <div class="product-card" data-category="rank">
+      <div class="product-image product-placeholder">
+        <span class="product-placeholder-text">?</span>
+      </div>
+      <div class="product-content">
+        <h3 class="product-name">?????</h3>
+        <p class="product-description">Rank misterius</p>
+        <ul class="product-features">
+          <li>Fitur rahasia</li>
+        </ul>
+        <div class="product-footer">
+          <span class="product-price">?????</span>
+          <button class="btn btn-primary" onclick="showToast('Coming soon!', 'info')">Beli</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rank 2 -->
+    <div class="product-card" data-category="rank">
+      <div class="product-image product-placeholder">
+        <span class="product-placeholder-text">?</span>
+      </div>
+      <div class="product-content">
+        <h3 class="product-name">?????</h3>
+        <p class="product-description">Rank misterius</p>
+        <ul class="product-features">
+          <li>Fitur rahasia</li>
+        </ul>
+        <div class="product-footer">
+          <span class="product-price">?????</span>
+          <button class="btn btn-primary" onclick="showToast('Coming soon!', 'info')">Beli</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rank 3 -->
+    <div class="product-card" data-category="rank">
+      <div class="product-image product-placeholder">
+        <span class="product-placeholder-text">?</span>
+      </div>
+      <div class="product-content">
+        <h3 class="product-name">?????</h3>
+        <p class="product-description">Rank misterius</p>
+        <ul class="product-features">
+          <li>Fitur rahasia</li>
+        </ul>
+        <div class="product-footer">
+          <span class="product-price">?????</span>
+          <button class="btn btn-primary" onclick="showToast('Coming soon!', 'info')">Beli</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rank 4 -->
+    <div class="product-card" data-category="rank">
+      <div class="product-image product-placeholder">
+        <span class="product-placeholder-text">?</span>
+      </div>
+      <div class="product-content">
+        <h3 class="product-name">?????</h3>
+        <p class="product-description">Rank misterius</p>
+        <ul class="product-features">
+          <li>Fitur rahasia</li>
+        </ul>
+        <div class="product-footer">
+          <span class="product-price">?????</span>
+          <button class="btn btn-primary" onclick="showToast('Coming soon!', 'info')">Beli</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rank 5 -->
+    <div class="product-card" data-category="rank">
+      <div class="product-image product-placeholder">
+        <span class="product-placeholder-text">?</span>
+      </div>
+      <div class="product-content">
+        <h3 class="product-name">?????</h3>
+        <p class="product-description">Rank misterius</p>
+        <ul class="product-features">
+          <li>Fitur rahasia</li>
+        </ul>
+        <div class="product-footer">
+          <span class="product-price">?????</span>
+          <button class="btn btn-primary" onclick="showToast('Coming soon!', 'info')">Beli</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shard 1 -->
+    <div class="product-card" data-category="shard">
+      <div class="product-image product-placeholder">
+        <span class="product-placeholder-text">💎</span>
+      </div>
+      <div class="product-content">
+        <h3 class="product-name">?????</h3>
+        <p class="product-description">Paket shard misterius</p>
+        <ul class="product-features">
+          <li>Jumlah: ?????</li>
+        </ul>
+        <div class="product-footer">
+          <span class="product-price">?????</span>
+          <button class="btn btn-primary" onclick="showToast('Coming soon!', 'info')">Beli</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shard 2 -->
+    <div class="product-card" data-category="shard">
+      <div class="product-image product-placeholder">
+        <span class="product-placeholder-text">💎</span>
+      </div>
+      <div class="product-content">
+        <h3 class="product-name">?????</h3>
+        <p class="product-description">Paket shard misterius</p>
+        <ul class="product-features">
+          <li>Jumlah: ?????</li>
+        </ul>
+        <div class="product-footer">
+          <span class="product-price">?????</span>
+          <button class="btn btn-primary" onclick="showToast('Coming soon!', 'info')">Beli</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shard 3 -->
+    <div class="product-card" data-category="shard">
+      <div class="product-image product-placeholder">
+        <span class="product-placeholder-text">💎</span>
+      </div>
+      <div class="product-content">
+        <h3 class="product-name">?????</h3>
+        <p class="product-description">Paket shard misterius</p>
+        <ul class="product-features">
+          <li>Jumlah: ?????</li>
+        </ul>
+        <div class="product-footer">
+          <span class="product-price">?????</span>
+          <button class="btn btn-primary" onclick="showToast('Coming soon!', 'info')">Beli</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shard 4 -->
+    <div class="product-card" data-category="shard">
+      <div class="product-image product-placeholder">
+        <span class="product-placeholder-text">💎</span>
+      </div>
+      <div class="product-content">
+        <h3 class="product-name">?????</h3>
+        <p class="product-description">Paket shard misterius</p>
+        <ul class="product-features">
+          <li>Jumlah: ?????</li>
+        </ul>
+        <div class="product-footer">
+          <span class="product-price">?????</span>
+          <button class="btn btn-primary" onclick="showToast('Coming soon!', 'info')">Beli</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shard 5 -->
+    <div class="product-card" data-category="shard">
+      <div class="product-image product-placeholder">
+        <span class="product-placeholder-text">💎</span>
+      </div>
+      <div class="product-content">
+        <h3 class="product-name">?????</h3>
+        <p class="product-description">Paket shard misterius</p>
+        <ul class="product-features">
+          <li>Jumlah: ?????</li>
+        </ul>
+        <div class="product-footer">
+          <span class="product-price">?????</span>
+          <button class="btn btn-primary" onclick="showToast('Coming soon!', 'info')">Beli</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shard 6 -->
+    <div class="product-card" data-category="shard">
+      <div class="product-image product-placeholder">
+        <span class="product-placeholder-text">💎</span>
+      </div>
+      <div class="product-content">
+        <h3 class="product-name">?????</h3>
+        <p class="product-description">Paket shard misterius</p>
+        <ul class="product-features">
+          <li>Jumlah: ?????</li>
+        </ul>
+        <div class="product-footer">
+          <span class="product-price">?????</span>
+          <button class="btn btn-primary" onclick="showToast('Coming soon!', 'info')">Beli</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shard 7 -->
+    <div class="product-card" data-category="shard">
+      <div class="product-image product-placeholder">
+        <span class="product-placeholder-text">💎</span>
+      </div>
+      <div class="product-content">
+        <h3 class="product-name">?????</h3>
+        <p class="product-description">Paket shard misterius</p>
+        <ul class="product-features">
+          <li>Jumlah: ?????</li>
+        </ul>
+        <div class="product-footer">
+          <span class="product-price">?????</span>
+          <button class="btn btn-primary" onclick="showToast('Coming soon!', 'info')">Beli</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shard 8 -->
+    <div class="product-card" data-category="shard">
+      <div class="product-image product-placeholder">
+        <span class="product-placeholder-text">💎</span>
+      </div>
+      <div class="product-content">
+        <h3 class="product-name">?????</h3>
+        <p class="product-description">Paket shard misterius</p>
+        <ul class="product-features">
+          <li>Jumlah: ?????</li>
+        </ul>
+        <div class="product-footer">
+          <span class="product-price">?????</span>
+          <button class="btn btn-primary" onclick="showToast('Coming soon!', 'info')">Beli</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shard 9 -->
+    <div class="product-card" data-category="shard">
+      <div class="product-image product-placeholder">
+        <span class="product-placeholder-text">💎</span>
+      </div>
+      <div class="product-content">
+        <h3 class="product-name">?????</h3>
+        <p class="product-description">Paket shard misterius</p>
+        <ul class="product-features">
+          <li>Jumlah: ?????</li>
+        </ul>
+        <div class="product-footer">
+          <span class="product-price">?????</span>
+          <button class="btn btn-primary" onclick="showToast('Coming soon!', 'info')">Beli</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shard 10 -->
+    <div class="product-card" data-category="shard">
+      <div class="product-image product-placeholder">
+        <span class="product-placeholder-text">💎</span>
+      </div>
+      <div class="product-content">
+        <h3 class="product-name">?????</h3>
+        <p class="product-description">Paket shard misterius</p>
+        <ul class="product-features">
+          <li>Jumlah: ?????</li>
+        </ul>
+        <div class="product-footer">
+          <span class="product-price">?????</span>
+          <button class="btn btn-primary" onclick="showToast('Coming soon!', 'info')">Beli</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <img src="assets/images/logo.png" alt="Calmionix" class="footer-logo">
+        <span class="footer-title">Calmionix</span>
+      </div>
+      
+      <p class="footer-copyright">© 2024 Calmionix. All rights reserved.</p>
+      
+      <div class="footer-links">
+        <a href="#" class="footer-link">Syarat & Ketentuan</a>
+        <a href="#" class="footer-link">Kebijakan Privasi</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Container -->
+  <div class="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="js/theme.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

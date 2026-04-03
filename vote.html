@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0a1a">
+  <meta name="description" content="Vote Calmionix - Dukung server kami dan dapatkan reward menarik">
+  <meta name="keywords" content="Minecraft, Vote, Calmionix, Reward">
+  <meta name="author" content="Calmionix">
+  
+  <title>Vote - Calmionix</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Galaxy Background Canvas -->
+  <canvas id="galaxy-canvas"></canvas>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">
+      <img src="assets/images/logo.png" alt="Calmionix" class="navbar-logo">
+      <span class="navbar-title">Calmionix</span>
+    </a>
+    
+    <ul class="navbar-nav">
+      <li><a href="index.html" class="nav-link">Beranda</a></li>
+      <li><a href="shop.html" class="nav-link">Toko</a></li>
+      <li><a href="vote.html" class="nav-link active">Vote</a></li>
+      <li><a href="tutorial.html" class="nav-link">Tutorial</a></li>
+      <li><a href="https://discord.gg/qfdBAW29sT" target="_blank" class="nav-link">Discord</a></li>
+    </ul>
+    
+    <div class="navbar-actions">
+      <div class="wib-clock" id="wib-clock">00:00:00 WIB</div>
+      <button class="btn-icon" id="theme-toggle" title="Switch theme">☀️</button>
+      <button class="btn-icon" id="lang-toggle" title="Switch language">EN</button>
+      
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Vote Page Header -->
+  <header class="vote-page-header">
+    <div class="section-header">
+      <h1 class="section-title">🗳️ Vote Calmionix</h1>
+      <p class="section-subtitle">Vote server kami dan dapatkan reward menarik setiap hari!</p>
+    </div>
+  </header>
+
+  <!-- Large Vote Button Section -->
+  <section class="vote-button-container">
+    <a href="https://minecraft-mp.com/server/353699/vote/" target="_blank" class="vote-button-large">
+      <span>🗳️</span>
+      <span>Vote Server</span>
+    </a>
+    <p style="color: var(--text-secondary); margin-top: 1rem; font-size: 0.9rem;">
+      Klik tombol di atas untuk membuka halaman voting
+    </p>
+  </section>
+
+  <!-- Vote Sites -->
+  <section class="vote-sites">
+    <div class="vote-site-card">
+      <div class="vote-site-icon">🗳️</div>
+      <div class="vote-site-info">
+        <h3>Minecraft-MP</h3>
+        <p>Vote di Minecraft-MP dan dapatkan reward instan</p>
+      </div>
+      <a href="https://minecraft-mp.com/server/353699/vote/" target="_blank" class="btn btn-primary">Vote Sekarang</a>
+    </div>
+  </section>
+
+  <!-- Vote Rewards -->
+  <section class="vote-rewards-section">
+    <h3>Reward Voting</h3>
+    <div class="rewards-grid">
+      <div class="reward-card">
+        <div class="reward-card-icon">💰</div>
+        <div class="reward-card-value">$5.000</div>
+        <div class="reward-card-label">Uang In-Game</div>
+      </div>
+      <div class="reward-card">
+        <div class="reward-card-icon">💎</div>
+        <div class="reward-card-value">50 Shards</div>
+        <div class="reward-card-label">Shards</div>
+      </div>
+      <div class="reward-card">
+        <div class="reward-card-icon">🗝️</div>
+        <div class="reward-card-value">1 Vote Key</div>
+        <div class="reward-card-label">Crate Key</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vote Info Section -->
+  <section class="section">
+    <div class="media-container">
+      <div class="media-card">
+        <div class="media-header">
+          <h2 class="media-title">📋 Cara Vote</h2>
+          <p class="media-subtitle">Ikuti langkah-langkah berikut untuk vote dan dapatkan reward</p>
+        </div>
+        
+        <div class="media-content" style="grid-template-columns: 1fr;">
+          <div class="media-benefits">
+            <ul>
+              <li>Klik tombol "Vote Server" di atas</li>
+              <li>Masukkan username Minecraft kamu</li>
+              <li>Selesaikan verifikasi captcha</li>
+              <li>Klik tombol vote</li>
+              <li>Reward akan otomatis masuk ke akun kamu!</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="media-cta" style="margin-top: 2rem;">
+          <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+            💡 <strong>Tips:</strong> Vote setiap hari untuk mendapatkan reward terus-menerus!
+          </p>
+          <a href="https://discord.gg/qfdBAW29sT" target="_blank" class="btn btn-discord">Butuh Bantuan? Join Discord</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <img src="assets/images/logo.png" alt="Calmionix" class="footer-logo">
+        <span class="footer-title">Calmionix</span>
+      </div>
+      
+      <p class="footer-copyright">© 2024 Calmionix. All rights reserved.</p>
+      
+      <div class="footer-links">
+        <a href="#" class="footer-link">Syarat & Ketentuan</a>
+        <a href="#" class="footer-link">Kebijakan Privasi</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Container -->
+  <div class="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="js/theme.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
